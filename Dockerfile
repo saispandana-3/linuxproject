@@ -4,5 +4,5 @@ WORKDIR /app
 
 COPY . /app
 
-CMD ["ls","-l"]
+CMD ["tail" "-f" "/dev/null"]
 
