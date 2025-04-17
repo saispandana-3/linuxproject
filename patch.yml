@@ -1,0 +1,14 @@
+---
+- name: patching
+  hosts: 
+  gather_facts: no
+  become: yes
+  tasks:
+    - name: updateing
+      apt:
+       upgrade: dist
+    - name: installing httpd
+      apt:
+       name: apache2
+       state: present
+    
