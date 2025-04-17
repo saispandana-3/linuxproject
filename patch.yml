@@ -2,7 +2,6 @@
 - name: patching
   hosts: web
   gather_facts: no
-  become: yes
   tasks:
     - name: updateing
       apt:
